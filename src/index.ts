@@ -5,9 +5,10 @@
 import * as express from 'express'
 import * as bodyParser from 'body-parser'
 import sqlite from 'ts-sqlite3'
+import repl = require('re-pl')
 import run from './run'
 
-run(async function() {
+run(async() => {
   // Create new express application
   const app = express()
   // Create new database connection
